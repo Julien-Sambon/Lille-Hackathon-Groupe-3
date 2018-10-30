@@ -1,0 +1,52 @@
+{# src/View/layout.html.twig #}
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <!-- Meta -->
+    <meta charset="UTF-8">
+    <!-- maximum-scale=1.0 is now deprecated -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+
+    <title>IntraWild - {% block title %}{% endblock %}</title>
+
+    <!-- Latest Bootstrap's minified CSS -->
+    <link rel="stylesheet" href="/assets/css/bootstrap-4.1.3/bootstrap.min.css">
+
+    <!-- Main CSS style page -->
+    <link rel="stylesheet" href="/assets/css/style.css">
+
+    {% block stylesheet %}{% endblock %}
+
+    <link rel="icon" href="/assets/images/favicon.png">
+</head>
+<body>
+<header>
+    {% block header %}
+    {% endblock %}
+</header>
+<div class="main">
+    {% block body %}
+    {% endblock %}
+</div>
+<footer class="py-5 bg-dark">
+    {% block footer %}
+        <!-- Footer -->
+        <div class="container">
+            <p class="m-0 text-center text-white">Copyright &copy; Your Website 2018</p>
+        </div>
+        <!-- /.container -->
+    {% endblock %}
+</footer>
+
+<!-- Latest Bootstrap's minified JS and Jquery -->
+<script src="/assets/js/jquery-3.3.1.min.js"></script>
+<script src="/assets/js/bootstrap.min.js"></script>
+
+{% block javascripts %}
+{% endblock %}
+</body>
+</html>

@@ -1,0 +1,32 @@
+{% extends 'layout.html.twig' %}
+
+{% block title %}Edit an user{% endblock %}
+
+{% block stylesheet %}
+    <link rel="stylesheet" href="/assets/css/staff.css">
+{% endblock %}
+
+{% block header %}
+    {% include "Staff/_staffNavbar.html.twig" %}
+{% endblock %}
+
+{% block body %}
+    <!-- Page Content -->
+    <div class="container">
+        <!-- Page Features -->
+        <div class="row text-center">
+            {% if user %}
+                <div class="col mt-2 mb-5">
+                    <h1>Edit : {{ user.firstname }} {{ user.lastname }}</h1>
+                </div>
+            {% else %}
+                <p class="badge badge-danger">No user in DB</p>
+            {% endif %}
+        </div>
+        <div class="row">
+            <div class="col mt-2 mb-5">
+                {% include 'Staff/_form.html.twig' %}
+            </div>
+        </div>
+    </div>
+{% endblock %}

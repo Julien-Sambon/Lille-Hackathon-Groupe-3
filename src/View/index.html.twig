@@ -1,0 +1,33 @@
+{% extends 'layout.html.twig' %}
+
+{% block title %}Index{% endblock %}
+
+{% block stylesheet %}
+{% endblock %}
+
+{% block body %}
+    <!-- Page Content -->
+    <div class="container">
+        <!-- Page Features -->
+        <div class="row text-center">
+            <div class="col mt-2 mb-5">
+                <h1>Default page</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col mt-2 mb-5">
+                <ul>
+                    <li>
+                        <a href="/login">Connection</a>
+                    </li>
+                    <li>
+                        <a href="/profile">Profile's page</a>
+                    </li>
+                    <li>
+                        <a href="/staff">Staff index page</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+{% endblock %}
