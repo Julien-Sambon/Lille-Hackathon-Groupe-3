@@ -11,6 +11,8 @@
  */
 namespace Controller;
 
+use GuzzleHttp\Client;
+
 use Model\User\User;
 use Model\User\UserManager;
 
@@ -31,6 +33,14 @@ class ChildController extends AbstractController
                 return null;
             }
 
-        return $this->twig->render('Child/childindex.html.twig');
+
+        $json_source = file_get_contents("https://fr.openfoodfacts.org/api/v0/produit/5010477352712.json");
+        $json_data = json_decode($json_source);
+        $product = $json_data->product;
+
+        echo "Magasin : $product->stores" . "<br />";
+        echo "Quantité : $product->quantity" . "<br />";
+
+        die();
     }
 }
