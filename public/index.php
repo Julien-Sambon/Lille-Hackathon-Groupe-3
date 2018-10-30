@@ -1,4 +1,5 @@
 <?php
+session_start();
 
 if (preg_match('/\.(?:png|jpg|jpeg|gif)$/', $_SERVER["REQUEST_URI"])) {
     return false;    // Not allowing to access other routes like img and so on.

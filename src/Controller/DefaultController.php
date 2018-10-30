@@ -32,6 +32,34 @@ class DefaultController extends AbstractController
      */
     public function index()
     {
+        if (!empty($_SESSION['role']))
+        {
+            if ($_SESSION['role'] == 2) {
+                header('Location: /mom');
+                return null;
+            } elseif ($_SESSION['role'] == 1) {
+                header('Location: /child');
+                return null;
+            }
+        }
+
+        if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+            if ($_POST['role'] == 2) {
+                $_SESSION['role'] = 2;
+                header('Location: /mom');
+            }
+
+            elseif ($_POST['role'] == 1) {
+                $_SESSION['role'] = 1;
+                header('Location: /child');
+            }
+        }
         return $this->twig->render('index.html.twig');
+    }
+
+    public function disconnect()
+    {
+        session_destroy();
+        header('Location: /');
     }
 }
