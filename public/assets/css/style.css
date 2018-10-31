@@ -1,5 +1,6 @@
 body, html {
     height: 100%;
+    color: white;
 }
 
 body {
@@ -13,6 +14,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
 }
 
 #connectpage {
@@ -21,4 +23,23 @@ body {
     top: 250px;
     left: 80px;
 }
+
+.card-header {
+    background-color: orange;
+}
+
+.card-body {
+    background-color: black;
+}
+
+.container-fluid {
+    background-color: orange;
+}
+
+#product {
+    box-shadow: 8px 8px 12px #aaa;
+}
+
+
+
 

@@ -1,0 +1,28 @@
+{% extends 'layout.html.twig' %}
+
+{% block title %}Index{% endblock %}
+
+{% block stylesheet %}
+{% endblock %}
+
+{% block body %}
+<div class="container mt-5">
+    <div class="row justify-content-around">
+        <div class="col-2">
+            <img class="align-self-center mr-3" id="product" src="{{ image }}" alt="Generic placeholder image">
+        </div>
+        <div class="col-8" style="background-color: rgba(0, 0, 0, 0.4)">
+            <div class="media-body" id="textdetails">
+                <h3 class="mt-4" style="color: orange; text-align: center">{{ name }}</h3>
+                <p>Marque : {{ brand }}</p>
+                <p>Pays : {{ countries }}</p>
+                <p>Qté : {{ quantity }}</p>
+                <p>Conditionnement : {{ packaging }}</p>
+                <p>Ingrédients : {{ ingredients }}</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+
