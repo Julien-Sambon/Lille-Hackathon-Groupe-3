@@ -48,6 +48,7 @@
             width: 600px;
             list-style: none;
             float: right;
+            margin-top: 20px;
         }
         .row li {
             margin: 5px 5px 5px 5px;
@@ -59,6 +60,10 @@
             color: #fff;
             background-color: orange !important;
             border-color: orange !important;
+        }
+        .inventaire {
+            left: 70%;
+            position: absolute;
         }
     </style>
 {% endblock %}
@@ -92,7 +97,8 @@
     </div>
 
     <div>
-        <strong>Results</strong>
+        <strong>Adresses :</strong>
+        <strong class="inventaire">Inventaire :</strong>
         </div>
     <div id="output"></div>
     </div>
@@ -171,7 +177,7 @@
                             outputDiv.innerHTML += destinationList[j] +
                                 ': ' + results[j].distance.text + '<br>';
                             if (results[j].distance.value < 50) {
-                                outputDiv.innerHTML += 'Tu es arrivé au ' + destinationList[j] + '<a href="/child/adresse/'+replace+'">'+ '  ' + 'Récupérer les bonbons' + '<a/>' + "<br />";
+                                outputDiv.innerHTML += 'Tu es arrivé au ' + destinationList[j] + '<a href="/child/adresse/'+replace+'" style="color: #20F35E !important;">'+ '  ' + 'Récupérer les bonbons' + '<a/>' + "<br />";
                             }
                         }
                     }
