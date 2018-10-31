@@ -26,7 +26,7 @@ use Model\User\UserManager;
 
 class ChildController extends AbstractController
 {
-    public function index()
+    public function select()
     {
             if ($_SESSION['role'] != 1) {
                 header('Location: /');
@@ -34,13 +34,20 @@ class ChildController extends AbstractController
             }
 
 
-        $json_source = file_get_contents("https://fr.openfoodfacts.org/api/v0/produit/5010477352712.json");
+        $json_source = file_get_contents("https://fr.openfoodfacts.org/api/v0/produit/50251094.json");
         $json_data = json_decode($json_source);
         $product = $json_data->product;
 
-        echo "Magasin : $product->stores" . "<br />";
+        echo "Nom du produit : $product->product_name_fr" . "<br />";
+        echo "Id du produit : $product->_id"  . "<br />";
+        echo "Marque : $product->brands" . "<br />";
         echo "Quantité : $product->quantity" . "<br />";
-
-        die();
+        echo "Caractéristiques du produit" . "<br />";
+        echo "Magasin : $product->stores" . "<br />";
+        echo "Conditionnement : " . $product->packaging_tags['0'] . "<br />";
+        echo "Pays de vente : " . $product->countries . "<br />";
+        echo "Liste des ingrédients : " . $product->ingredients_text_debug . "<br />";
+        echo "Traces éventuelles : " . $product->traces_from_user . "<br />";
+        echo "<img src='$product->image_front_url'>" . "<br />";
     }
 }

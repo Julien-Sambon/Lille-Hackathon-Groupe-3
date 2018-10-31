@@ -1,5 +1,5 @@
 <?php
-define('APP_DB_USER', 'julien');
-define('APP_DB_PWD', '$C6b7722a00');
+define('APP_DB_USER', 'mac');
+define('APP_DB_PWD', 'Bethune-62');
 define('APP_DB_HOST', 'localhost');
-define('APP_DB_NAME', 'intranet');
+define('APP_DB_NAME', 'db_intrawild');
