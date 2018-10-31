@@ -45,11 +45,15 @@
 {% endblock %}
 
 {% block body %}
-    <h1>Coucou Enfant !</h1>
+    <div class="row">
+    {% for bonbon, key in inventory %}
+        <li><a href="/child/select/{{ key }}">{{ bonbon }}</a></li>
+    {% endfor %}
+    </div>
 
     <div class="row text-center display-none">
         {% if adresses is empty %}
-            <p class="badge badge-secondary">No user in DB</p>
+            <p class="badge badge-secondary">No adresse in DB</p>
         {% else %}
             <table class="table table-hover table-sm table-striped table-dark">
                 <thead>

@@ -17,7 +17,6 @@ $routes = [
     ],
     'Child' => [ // Controller
         ['index', '/child', ['GET', 'POST']], // action, url, method
-        ['inventory', '/child/inventory', ['GET', 'POST']], // action, url, method
         ['select', '/child/select/{id}', ['GET', 'POST']], // action, url, method
         ['adresseVisited', '/child/adresse/{adresse}', ['GET', 'POST']], // action, url, method
     ],
