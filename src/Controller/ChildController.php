@@ -37,7 +37,10 @@ class ChildController extends AbstractController
         $adresseManager = new AdresseManager($this->getPdo());
         $adresses = $adresseManager->selectAllNotVisited();
 
-        return $this->twig->render('Child/childindex.html.twig', ['adresses' => $adresses]);
+        return $this->twig->render('Child/childindex.html.twig', [
+            'adresses' => $adresses,
+            'inventory' => $_SESSION['inventory']
+        ]);
 
     }
 
@@ -49,21 +52,11 @@ class ChildController extends AbstractController
         $adresseManager = new AdresseManager($this->getPdo());
         $adresseManager->AddVisiteAdresse($adresseComplete);
         if (empty($_SESSION['inventory']))
-            $_SESSION['inventory'] = [];
-        else
+            $_SESSION['inventory'] = $this->giveRandomCandies();
+
+        elseif (!empty($_SESSION['inventory']))
             $_SESSION['inventory'] += $this->giveRandomCandies();
-
         header('Location: /');
-    }
-  
-    public function inventory()
-    {
-        if ($_SESSION['role'] != 1) {
-            header('Location: /');
-            return null;
-        }
-
-        return $this->twig->render('Child/inventory.html.twig', ['inventory' => $_SESSION['inventory']]);
     }
   
     public function select($id)

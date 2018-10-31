@@ -2,10 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e5c2e56a-9369-4df2-9046-e1f0ed7b854f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/db.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/db.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/routing.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/routing.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/ChildController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/ChildController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Adresse/AdresseManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Adresse/AdresseManager.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/View/Child/childindex.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/Child/childindex.html.twig" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -117,6 +119,18 @@
         </counts>
       </usages-collector>
     </session>
+    <session id="1561104549">
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="php" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="PHP" value="1" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
@@ -124,16 +138,16 @@
         <entry file="file://$PROJECT_DIR$/app/routing.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="170">
-              <caret line="19" column="21" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
+              <caret line="19" column="28" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="28" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/View/index.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+            <state relative-caret-position="476">
+              <caret line="28" column="14" selection-start-line="28" selection-start-column="14" selection-end-line="28" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -156,26 +170,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/View/Child/childindex.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1949">
+            <state relative-caret-position="30">
               <caret line="167" column="49" selection-start-line="167" selection-start-column="49" selection-end-line="167" selection-end-column="49" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/View/Child/inventory.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="60" selection-start-line="9" selection-start-column="60" selection-end-line="9" selection-end-column="60" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/db.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="32" selection-start-line="2" selection-start-column="32" selection-end-line="2" selection-end-column="32" />
+            <state>
+              <caret column="5" selection-start-column="5" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -215,8 +220,8 @@
         <option value="$PROJECT_DIR$/src/Model/User/AdresseManager.php" />
         <option value="$PROJECT_DIR$/src/Controller/ChildController.php" />
         <option value="$PROJECT_DIR$/src/View/Child/childindex.html.twig" />
-        <option value="$PROJECT_DIR$/app/db.php" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/app/db.php" />
       </list>
     </option>
   </component>
@@ -344,52 +349,69 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="hackathon1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hackathon1" type="462c0819:PsiDirectoryNode" />
+              <item name="Lille-Hackathon-Groupe-3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Lille-Hackathon-Groupe-3" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="hackathon1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hackathon1" type="462c0819:PsiDirectoryNode" />
+              <item name="Lille-Hackathon-Groupe-3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Lille-Hackathon-Groupe-3" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="hackathon1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hackathon1" type="462c0819:PsiDirectoryNode" />
+              <item name="Lille-Hackathon-Groupe-3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Lille-Hackathon-Groupe-3" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Lille-Hackathon-Groupe-3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Lille-Hackathon-Groupe-3" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Lille-Hackathon-Groupe-3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Lille-Hackathon-Groupe-3" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="hackathon1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hackathon1" type="462c0819:PsiDirectoryNode" />
+              <item name="Lille-Hackathon-Groupe-3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Lille-Hackathon-Groupe-3" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Lille-Hackathon-Groupe-3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Lille-Hackathon-Groupe-3" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Lille-Hackathon-Groupe-3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Lille-Hackathon-Groupe-3" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="View" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="hackathon1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hackathon1" type="462c0819:PsiDirectoryNode" />
+              <item name="Lille-Hackathon-Groupe-3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Lille-Hackathon-Groupe-3" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="View" type="462c0819:PsiDirectoryNode" />
               <item name="Child" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hackathon1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hackathon1" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="View" type="462c0819:PsiDirectoryNode" />
-              <item name="Mom" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -423,7 +445,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12779000" />
+    <option name="totallyTimeSpent" value="12838000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
@@ -493,7 +515,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/View/Child/childindex.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1949">
+        <state relative-caret-position="30">
           <caret line="167" column="49" selection-start-line="167" selection-start-column="49" selection-end-line="167" selection-end-column="49" />
         </state>
       </provider>
@@ -505,17 +527,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/db.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="32" selection-start-line="2" selection-start-column="32" selection-end-line="2" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/routing.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
-          <caret line="19" column="21" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
+          <caret line="19" column="28" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="28" />
         </state>
       </provider>
     </entry>
@@ -523,6 +538,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/db.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="5" selection-start-column="5" selection-end-column="5" />
         </state>
       </provider>
     </entry>

@@ -45,11 +45,15 @@
 {% endblock %}
 
 {% block body %}
-    <h1>Coucou Enfant !</h1>
+    <div class="row">
+    {% for bonbon, key in inventory %}
+        <li><a href="/child/select/{{ key }}">{{ bonbon }}</a></li>
+    {% endfor %}
+    </div>
 
     <div class="row text-center display-none">
         {% if adresses is empty %}
-            <p class="badge badge-secondary">No user in DB</p>
+            <p class="badge badge-secondary">No adresse in DB</p>
         {% else %}
             <table class="table table-hover table-sm table-striped table-dark">
                 <thead>
@@ -85,7 +89,7 @@
         // My current location
         function locate() {
             navigator.geolocation.getCurrentPosition(function(position){
-                var latLng = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
+                let latLng = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
 
                 new google.maps.Geocoder().geocode({"latLng": latLng}, function(results, status) {
                     document.querySelector("#location").innerHTML = results[0].formatted_address;
@@ -95,38 +99,36 @@
 
         function initMap() {
 
-            var bounds = new google.maps.LatLngBounds;
-            var markersArray = [];
+            let bounds = new google.maps.LatLngBounds;
+            let markersArray = [];
 
-            var origin2 = "3 bis rue Ambroise Paré, Lille, France";
+            let origin2 = "3 bis rue Ambroise Paré, Lille, France";
 
-            // Generate destination variables [Function to be completed]
-            var el = document.getElementsByClassName("info");
-            for (var i = 1, ilen = el.length - 1; i < ilen; i++) {
+            let el = document.getElementsByClassName("info");
+            for (let i = 1, ilen = el.length - 1; i < ilen; i++) {
                 el[i].id = i;
             }
-            {% set i = 1 %}
+            let destinations = [];
             {% for adresse in adresses %}
-                var destination{{ i }} = document.getElementById('{{ adresse.id }}').textContent;
-                {% set i = i + 1 %}
+                destinations.push(document.getElementById('{{ adresse.id }}').textContent);
             {% endfor %}
 
-            var destinationIcon = 'https://chart.googleapis.com/chart?' +
+            let destinationIcon = 'https://chart.googleapis.com/chart?' +
                 'chst=d_map_pin_letter&chld=D|FF0000|000000';
-            var originIcon = 'https://chart.googleapis.com/chart?' +
+            let originIcon = 'https://chart.googleapis.com/chart?' +
                 'chst=d_map_pin_letter&chld=O|FFFF00|000000';
-            var map = new google.maps.Map(document.getElementById('map'), {
+            let map = new google.maps.Map(document.getElementById('map'), {
                 center: {lat: 55.53, lng: 9.4},
                 zoom: 13,
                 gestureHandling: 'cooperative'
 
             });
-            var geocoder = new google.maps.Geocoder;
+            let geocoder = new google.maps.Geocoder;
 
-            var service = new google.maps.DistanceMatrixService;
+            let service = new google.maps.DistanceMatrixService;
             service.getDistanceMatrix({
                 origins: [origin2],
-                destinations: [destination1, destination2, destination3, destination4, destination5],
+                destinations: destinations,
                 travelMode: 'DRIVING',
                 unitSystem: google.maps.UnitSystem.METRIC,
                 avoidHighways: false,
@@ -135,14 +137,14 @@
                 if (status !== 'OK') {
                     alert('Error was: ' + status);
                 } else {
-                    var originList = response.originAddresses;
-                    var destinationList = response.destinationAddresses;
-                    var outputDiv = document.getElementById('output');
+                    let originList = response.originAddresses;
+                    let destinationList = response.destinationAddresses;
+                    let outputDiv = document.getElementById('output');
                     outputDiv.innerHTML = '';
                     deleteMarkers(markersArray);
 
-                    var showGeocodedAddressOnMap = function(asDestination) {
-                        var icon = asDestination ? destinationIcon : originIcon;
+                    let showGeocodedAddressOnMap = function(asDestination) {
+                        let icon = asDestination ? destinationIcon : originIcon;
                         return function(results, status) {
                             if (status === 'OK') {
                                 map.fitBounds(bounds.extend(results[0].geometry.location));
@@ -157,12 +159,12 @@
                         };
                     };
 
-                    for (var i = 0; i < originList.length; i++) {
-                        var results = response.rows[i].elements;
+                    for (let i = 0; i < originList.length; i++) {
+                        let results = response.rows[i].elements;
                         geocoder.geocode({'address': originList[i]},
                             showGeocodedAddressOnMap(false));
-                        for (var j = 0; j < results.length; j++) {
-                            var replace = destinationList[j].replace(/ /g, "+");
+                        for (let j = 0; j < results.length; j++) {
+                            let replace = destinationList[j].replace(/ /g, "+");
                             geocoder.geocode({'address': destinationList[j]},
                                 showGeocodedAddressOnMap(true));
                             outputDiv.innerHTML += destinationList[j] +
@@ -170,9 +172,6 @@
                             if (results[j].distance.value < 30) {
                                 outputDiv.innerHTML += 'Tu es arrivé au ' + destinationList[j] + '<a href="/child/adresse/'+replace+'">'+ '  ' + 'Récupérer les bonbons' + '<a/>' + "<br />";
                             }
-                            /* else {
-                                outputDiv.innerHTML += 't\'es à ' + results[j].distance.text + ' t\'es encore trop loin des bons-bons';
-                            } */
                         }
                     }
                 }
@@ -182,7 +181,7 @@
         }
 
         function deleteMarkers(markersArray) {
-            for (var i = 0; i < markersArray.length; i++) {
+            for (let i = 0; i < markersArray.length; i++) {
                 markersArray[i].setMap(null);
             }
             markersArray = [];

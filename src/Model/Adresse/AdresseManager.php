@@ -104,4 +104,13 @@ class AdresseManager extends AbstractManager
         $statement->bindValue('id', $id, \PDO::PARAM_INT);
         $statement->execute();
     }
+
+    public function selectAllNotVisited()
+    {
+        $statement = $this->pdo->prepare("SELECT * FROM $this->table WHERE visited IS NULL");
+        $statement->setFetchMode(\PDO::FETCH_CLASS, $this->className);
+        $statement->execute();
+
+        return $statement->fetchAll();
+    }
 }
