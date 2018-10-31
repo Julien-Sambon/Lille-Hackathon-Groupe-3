@@ -15,13 +15,14 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    color: white;
 }
 
 #connectpage {
     color: white;
     position: absolute;
-    top: 250px;
-    left: 80px;
+    top: 70px;
+    margin:auto;
 }
 
 .card-header {

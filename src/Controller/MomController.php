@@ -12,8 +12,8 @@
 
 namespace Controller;
 
-use Model\User\User;
-use Model\User\UserManager;
+use Model\Adresse\Adresse;
+use Model\Adresse\AdresseManager;
 
 /**
  * Staff class controller
@@ -40,6 +40,20 @@ class MomController extends AbstractController
             return null;
         }
 
+        if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+            if (!empty($_POST['adresse'])) {
+
+                $adresseManager = new AdresseManager($this->getPdo());
+                $adresse = new Adresse();
+                $adresse->setLocation($_POST['adresse']);
+
+                $adresseManager->addAdresse($adresse);
+
+                return $this->twig->render('Mom/momindex.html.twig');
+            }
+            return $this->twig->render('Mom/momindex.html.twig');
+        }
         return $this->twig->render('Mom/momindex.html.twig');
+
     }
 }

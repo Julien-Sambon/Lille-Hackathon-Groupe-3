@@ -12,6 +12,8 @@
 
 namespace Model;
 
+use Model\Adresse\Adresse;
+
 /**
  * Abstract class handling default manager.
  *
@@ -56,8 +58,8 @@ abstract class AbstractManager
      */
     public function selectAll(): array
     {
-        if ($this->table === "user") {
-            $this->className .= "\User";
+        if ($this->table === "adresse") {
+            $this->className .= "\Adresse";
         }
         /* Add other tables if table is in another directory */
 
@@ -81,5 +83,16 @@ abstract class AbstractManager
         $statement->execute();
 
         return $statement->fetch();
+    }
+
+    public function addAdresse(Adresse $adresse): ?int
+    {
+        $statement = $this->pdo->prepare("INSERT INTO $this->table (location) VALUES (:location)");
+        $statement->bindValue('location', $adresse->getLocation(), \PDO::PARAM_STR);
+
+        if ($statement->execute()) {
+            return $this->pdo->lastInsertId();
+        }
+        return null;
     }
 }

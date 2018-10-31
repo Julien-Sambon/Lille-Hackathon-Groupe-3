@@ -13,8 +13,9 @@ namespace Controller;
 
 use GuzzleHttp\Client;
 
-use Model\User\User;
-use Model\User\UserManager;
+use function GuzzleHttp\Psr7\str;
+use Model\Adresse\AdresseManager;
+use Model\Adresse\Adresse;
 
 /**
  * User class controller.
@@ -32,20 +33,30 @@ class ChildController extends AbstractController
                 header('Location: /');
                 return null;
             }
-            $homeCandie = $this->giveRandomCandies();
 
-        return $this->twig->render('Child/childindex.html.twig');
+        $adresseManager = new AdresseManager($this->getPdo());
+        $adresses = $adresseManager->selectAllNotVisited();
+
+        return $this->twig->render('Child/childindex.html.twig', [
+            'adresses' => $adresses,
+            'inventory' => $_SESSION['inventory']
+        ]);
+
     }
-  
-    public function inventory()
-    {
-        if ($_SESSION['role'] != 1) {
-            header('Location: /');
-            return null;
-        }
-        $homeCandie = $this->giveRandomCandies();
 
-        return $this->twig->render('Child/inventory.html.twig', ['inventory' => $homeCandie]);
+    public function adresseVisited($adresse)
+    {
+        $adresseV1 = str_replace(",+France", "", $adresse);
+        $adresseComplete = str_replace("+", " ", $adresseV1);
+
+        $adresseManager = new AdresseManager($this->getPdo());
+        $adresseManager->AddVisiteAdresse($adresseComplete);
+        if (empty($_SESSION['inventory']))
+            $_SESSION['inventory'] = $this->giveRandomCandies();
+
+        elseif (!empty($_SESSION['inventory']))
+            $_SESSION['inventory'] += $this->giveRandomCandies();
+        header('Location: /');
     }
   
     public function select($id)
@@ -59,16 +70,6 @@ class ChildController extends AbstractController
         $json_data = json_decode($json_source);
         $product = $json_data->product;
 
-       /* echo "Nom du produit : $product->product_name_fr" . "<br />";
-        echo "Id du produit : $product->_id"  . "<br />";
-        echo "Marque : $product->brands" . "<br />";
-        echo "Quantité : $product->quantity" . "<br />";
-        echo "Caractéristiques du produit" . "<br />";
-        echo "Conditionnement : " . $product->packaging_tags['0'] . "<br />";
-        echo "Pays de vente : " . $product->countries . "<br />";
-        echo "Liste des ingrédients : " . $product->ingredients_text_debug . "<br />";
-        echo "Traces éventuelles : " . $product->traces_from_user . "<br />";
-        echo "<img src='$product->image_front_url'>" . "<br />";*/
 
         return $this->twig->render('Child/selectinventory.html.twig', [
             'name' => $product->product_name_fr,
@@ -77,6 +78,7 @@ class ChildController extends AbstractController
             'packaging' => $product->packaging_tags['0'],
             'countries' => $product->countries,
             'ingredients' => $product->ingredients_text_debug,
+            'traces' => $product->traces_from_user,
             'image' => $product->image_front_url
         ]);
     }
