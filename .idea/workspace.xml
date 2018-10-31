@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e5c2e56a-9369-4df2-9046-e1f0ed7b854f" name="Default Changelist" comment="" />
+    <list default="true" id="e5c2e56a-9369-4df2-9046-e1f0ed7b854f" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/db.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/db.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/View/Child/childindex.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/Child/childindex.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/View/Child/selectinventory.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/Child/selectinventory.html.twig" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,31 +60,33 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
+          <entry key="css" value="1" />
           <entry key="gitignore" value="1" />
-          <entry key="php" value="14" />
-          <entry key="twig" value="5" />
+          <entry key="php" value="15" />
+          <entry key="twig" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="PHP" value="14" />
+          <entry key="CSS" value="1" />
+          <entry key="PHP" value="15" />
           <entry key="PLAIN_TEXT" value="1" />
-          <entry key="Twig" value="5" />
+          <entry key="Twig" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="15" />
           <entry key="gitignore" value="36" />
-          <entry key="php" value="643" />
-          <entry key="twig" value="624" />
+          <entry key="php" value="662" />
+          <entry key="twig" value="655" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PHP" value="643" />
+          <entry key="PHP" value="662" />
           <entry key="PLAIN_TEXT" value="51" />
-          <entry key="Twig" value="624" />
+          <entry key="Twig" value="655" />
         </counts>
       </usages-collector>
     </session>
@@ -127,17 +135,56 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/View/index.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="212">
-              <caret line="28" column="14" selection-start-line="28" selection-start-column="14" selection-end-line="28" selection-end-column="14" />
+            <state relative-caret-position="283">
+              <caret line="41" column="14" selection-start-line="41" selection-start-column="14" selection-end-line="41" selection-end-column="14" />
+              <folding>
+                <element signature="e#453#530#0#HTML" expanded="true" />
+                <element signature="e#575#684#0#HTML" expanded="true" />
+                <element signature="e#771#836#0#HTML" expanded="true" />
+                <element signature="e#865#921#0#HTML" expanded="true" />
+                <element signature="e#1058#1114#0#HTML" expanded="true" />
+                <element signature="e#1254#1310#0#HTML" expanded="true" />
+                <element signature="e#1460#1517#0#HTML" expanded="true" />
+                <element signature="e#1791#1879#0#HTML" expanded="true" />
+                <element signature="e#1984#2029#0#HTML" expanded="true" />
+                <element signature="e#2318#2387#0#HTML" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/assets/css/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="133">
+              <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/View/Child/childindex.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="32" column="32" selection-start-line="32" selection-start-column="32" selection-end-line="32" selection-end-column="32" />
+            <state relative-caret-position="226">
+              <caret line="60" column="44" selection-start-line="60" selection-start-column="44" selection-end-line="60" selection-end-column="44" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/db.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="38">
+              <caret line="2" column="33" selection-start-line="2" selection-start-column="33" selection-end-line="2" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/View/Child/selectinventory.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="38">
+              <caret line="8" column="28" lean-forward="true" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -145,7 +192,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/View/layout.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-627" />
+            <state relative-caret-position="-342" />
           </provider>
         </entry>
       </file>
@@ -165,12 +212,14 @@
         <option value="$PROJECT_DIR$/src/Model/User/AdresseManager.php" />
         <option value="$PROJECT_DIR$/src/Controller/ChildController.php" />
         <option value="$PROJECT_DIR$/src/Model/Adresse/Adresse.php" />
-        <option value="$PROJECT_DIR$/app/db.php" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/Controller/MomController.php" />
         <option value="$PROJECT_DIR$/src/View/Mom/momindex.html.twig" />
         <option value="$PROJECT_DIR$/src/Model/AbstractManager.php" />
+        <option value="$PROJECT_DIR$/app/db.php" />
+        <option value="$PROJECT_DIR$/src/View/Child/selectinventory.html.twig" />
         <option value="$PROJECT_DIR$/src/View/Child/childindex.html.twig" />
+        <option value="$PROJECT_DIR$/public/assets/css/style.css" />
       </list>
     </option>
   </component>
@@ -313,6 +362,31 @@
             <path>
               <item name="Lille-Hackathon-Groupe-3" type="b2602c69:ProjectViewProjectNode" />
               <item name="Lille-Hackathon-Groupe-3" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Lille-Hackathon-Groupe-3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Lille-Hackathon-Groupe-3" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Lille-Hackathon-Groupe-3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Lille-Hackathon-Groupe-3" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Lille-Hackathon-Groupe-3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Lille-Hackathon-Groupe-3" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Lille-Hackathon-Groupe-3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Lille-Hackathon-Groupe-3" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -391,17 +465,18 @@
       <workItem from="1540891399663" duration="6444000" />
       <workItem from="1540907570368" duration="294000" />
       <workItem from="1540953109798" duration="8616000" />
-      <workItem from="1540978170607" duration="6662000" />
+      <workItem from="1540978170607" duration="8333000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22016000" />
+    <option name="totallyTimeSpent" value="23687000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="36" y="0" width="1330" height="768" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26090342" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26090342" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -414,7 +489,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.32707354" />
+      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.32707354" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -484,23 +559,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/db.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="38" selection-start-line="4" selection-start-column="38" selection-end-line="4" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="57">
           <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/View/layout.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-627" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/routing.php">
@@ -520,13 +583,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/View/Mom/momindex.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="302">
-          <caret line="17" column="72" selection-start-line="17" selection-start-column="72" selection-end-line="17" selection-end-column="72" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Model/AbstractManager.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="321">
@@ -534,17 +590,62 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/View/index.html.twig">
+    <entry file="file://$PROJECT_DIR$/app/db.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="28" column="14" selection-start-line="28" selection-start-column="14" selection-end-line="28" selection-end-column="14" />
+        <state relative-caret-position="38">
+          <caret line="2" column="33" selection-start-line="2" selection-start-column="33" selection-end-line="2" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/View/Child/selectinventory.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="8" column="28" lean-forward="true" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/View/layout.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-342" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/View/Mom/momindex.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="302">
+          <caret line="17" column="72" selection-start-line="17" selection-start-column="72" selection-end-line="17" selection-end-column="72" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/View/Child/childindex.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="32" column="32" selection-start-line="32" selection-start-column="32" selection-end-line="32" selection-end-column="32" />
+        <state relative-caret-position="226">
+          <caret line="60" column="44" selection-start-line="60" selection-start-column="44" selection-end-line="60" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/View/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="283">
+          <caret line="41" column="14" selection-start-line="41" selection-start-column="14" selection-end-line="41" selection-end-column="14" />
+          <folding>
+            <element signature="e#453#530#0#HTML" expanded="true" />
+            <element signature="e#575#684#0#HTML" expanded="true" />
+            <element signature="e#771#836#0#HTML" expanded="true" />
+            <element signature="e#865#921#0#HTML" expanded="true" />
+            <element signature="e#1058#1114#0#HTML" expanded="true" />
+            <element signature="e#1254#1310#0#HTML" expanded="true" />
+            <element signature="e#1460#1517#0#HTML" expanded="true" />
+            <element signature="e#1791#1879#0#HTML" expanded="true" />
+            <element signature="e#1984#2029#0#HTML" expanded="true" />
+            <element signature="e#2318#2387#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/assets/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
         </state>
       </provider>
     </entry>
