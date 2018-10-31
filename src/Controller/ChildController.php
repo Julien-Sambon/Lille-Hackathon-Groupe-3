@@ -70,15 +70,6 @@ class ChildController extends AbstractController
         $json_data = json_decode($json_source);
         $product = $json_data->product;
 
-/*        echo "Nom du produit : $product->product_name_fr" . "<br />";
-        echo "Marque : $product->brands" . "<br />";
-        echo "Quantité : $product->quantity" . "<br />";
-        echo "Caractéristiques du produit" . "<br />";
-        echo "Conditionnement : " . $product->packaging_tags['0'] . "<br />";
-        echo "Pays de vente : " . $product->countries . "<br />";
-        echo "Liste des ingrédients : " . $product->ingredients_text_debug . "<br />";
-        echo "Traces éventuelles : " . $product->traces_from_user . "<br />";
-        echo "<img src='$product->image_front_url'>" . "<br />"; */
 
         return $this->twig->render('Child/selectinventory.html.twig', [
             'name' => $product->product_name_fr,
