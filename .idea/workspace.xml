@@ -4,17 +4,13 @@
     <list default="true" id="e5c2e56a-9369-4df2-9046-e1f0ed7b854f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/Hackathon-Groupe-3-Lille.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Hackathon-Groupe-3-Lille.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/routing.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/routing.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/StaffController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/UserController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/View/Staff/_form.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/View/Staff/_staffNavbar.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/View/Staff/add.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/View/Staff/edit.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/View/Staff/index.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/View/User/login.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/View/User/profile.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/db.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/db.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/ChildController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/ChildController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/AbstractManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/AbstractManager.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/User/AdresseManager.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/User/User.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/View/Child/childindex.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/Child/childindex.html.twig" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -58,23 +54,106 @@
         </counts>
       </usages-collector>
     </session>
+    <session id="1828090242">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.open.time.1" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="php" value="7" />
+          <entry key="twig" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="PHP" value="7" />
+          <entry key="Twig" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="dummy" value="15" />
+          <entry key="php" value="245" />
+          <entry key="twig" value="449" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="PHP" value="245" />
+          <entry key="PLAIN_TEXT" value="15" />
+          <entry key="Twig" value="449" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/routing.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="19" column="28" lean-forward="true" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="28" />
+            <state relative-caret-position="190">
+              <caret line="19" column="28" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="28" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/View/index.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="30" column="14" lean-forward="true" selection-start-line="30" selection-start-column="14" selection-end-line="30" selection-end-column="14" />
+            <state relative-caret-position="494">
+              <caret line="28" column="14" selection-start-line="28" selection-start-column="14" selection-end-line="28" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/index.php">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Controller/MomController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-342" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Controller/DefaultController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-684" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/View/Child/childindex.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="269">
+              <caret line="167" column="49" lean-forward="true" selection-start-line="167" selection-start-column="49" selection-end-line="167" selection-end-column="49" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Controller/ChildController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-190">
+              <caret line="16" column="26" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
+              <folding>
+                <element signature="e#196#218#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Model/AbstractManager.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-225">
+              <caret line="59" column="41" selection-start-line="59" selection-start-column="41" selection-end-line="59" selection-end-column="41" />
             </state>
           </provider>
         </entry>
@@ -89,6 +168,13 @@
       <list>
         <option value="$PROJECT_DIR$/src/Controller/HomeController.php" />
         <option value="$PROJECT_DIR$/app/routing.php" />
+        <option value="$PROJECT_DIR$/src/Model/User/User.php" />
+        <option value="$PROJECT_DIR$/src/Model/User/UserManager.php" />
+        <option value="$PROJECT_DIR$/src/Model/User/Adresse.php" />
+        <option value="$PROJECT_DIR$/src/Model/AbstractManager.php" />
+        <option value="$PROJECT_DIR$/src/Model/User/AdresseManager.php" />
+        <option value="$PROJECT_DIR$/src/Controller/ChildController.php" />
+        <option value="$PROJECT_DIR$/src/View/Child/childindex.html.twig" />
       </list>
     </option>
   </component>
@@ -202,13 +288,14 @@
       <path value="$PROJECT_DIR$/vendor/squizlabs/php_codesniffer" />
       <path value="$PROJECT_DIR$/vendor/nikic/fast-route" />
       <path value="$PROJECT_DIR$/vendor/symfony/polyfill-ctype" />
+      <path value="$PROJECT_DIR$/vendor/kubawerlos/composer-json-fixer" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/diff" />
     </include_path>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="218" />
-    <option name="y" value="74" />
-    <option name="width" value="1058" />
-    <option name="height" value="572" />
+    <option name="x" value="40" />
+    <option name="width" value="878" />
+    <option name="height" value="508" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -220,30 +307,43 @@
         <subPane>
           <expand>
             <path>
-              <item name="Hackathon-Groupe-3-Lille" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Hackathon-Groupe-3-Lille" type="462c0819:PsiDirectoryNode" />
+              <item name="Lille-Hackathon-Groupe-3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Lille-Hackathon-Groupe-3" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Hackathon-Groupe-3-Lille" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Hackathon-Groupe-3-Lille" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Lille-Hackathon-Groupe-3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Lille-Hackathon-Groupe-3" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Hackathon-Groupe-3-Lille" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Hackathon-Groupe-3-Lille" type="462c0819:PsiDirectoryNode" />
+              <item name="Lille-Hackathon-Groupe-3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Lille-Hackathon-Groupe-3" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Hackathon-Groupe-3-Lille" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Hackathon-Groupe-3-Lille" type="462c0819:PsiDirectoryNode" />
+              <item name="Lille-Hackathon-Groupe-3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Lille-Hackathon-Groupe-3" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="Controller" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Hackathon-Groupe-3-Lille" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Hackathon-Groupe-3-Lille" type="462c0819:PsiDirectoryNode" />
+              <item name="Lille-Hackathon-Groupe-3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Lille-Hackathon-Groupe-3" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Lille-Hackathon-Groupe-3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Lille-Hackathon-Groupe-3" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="View" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Lille-Hackathon-Groupe-3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Lille-Hackathon-Groupe-3" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="View" type="462c0819:PsiDirectoryNode" />
+              <item name="Child" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -280,20 +380,22 @@
       <updated>1540891394884</updated>
       <workItem from="1540891399663" duration="6444000" />
       <workItem from="1540907570368" duration="294000" />
+      <workItem from="1540953109798" duration="4593000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6738000" />
+    <option name="totallyTimeSpent" value="11331000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-4" y="0" width="1608" height="868" extended-state="6" />
+    <frame x="36" y="0" width="1330" height="768" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25289574" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25700936" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3286385" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -302,7 +404,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.3265306" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.32707354" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -317,34 +419,73 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/templates/home/index.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/HomeController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="49">
-          <caret line="18" column="91" selection-start-line="18" selection-start-column="91" selection-end-line="18" selection-end-column="91" />
-          <folding>
-            <element signature="e#34#99#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/home/index.html.twig" />
+    <entry file="file://$PROJECT_DIR$/src/Controller/HomeController.php" />
     <entry file="file://$PROJECT_DIR$/app/routing.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="19" column="28" lean-forward="true" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="28" />
+        <state relative-caret-position="190">
+          <caret line="19" column="28" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="28" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/View/index.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="30" column="14" lean-forward="true" selection-start-line="30" selection-start-column="14" selection-end-line="30" selection-end-column="14" />
+        <state relative-caret-position="494">
+          <caret line="28" column="14" selection-start-line="28" selection-start-column="14" selection-end-line="28" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/index.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/MomController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-342" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/DefaultController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-684" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Model/User/Adresse.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="131">
+          <caret line="64" column="51" selection-start-line="64" selection-start-column="51" selection-end-line="64" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Model/AbstractManager.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-225">
+          <caret line="59" column="41" selection-start-line="59" selection-start-column="41" selection-end-line="59" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Model/User/AdresseManager.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+          <folding>
+            <element signature="e#190#216#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/ChildController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-190">
+          <caret line="16" column="26" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
+          <folding>
+            <element signature="e#196#218#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/View/Child/childindex.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="269">
+          <caret line="167" column="49" lean-forward="true" selection-start-line="167" selection-start-column="49" selection-end-line="167" selection-end-column="49" />
         </state>
       </provider>
     </entry>
