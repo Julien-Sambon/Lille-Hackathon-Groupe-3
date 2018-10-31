@@ -12,6 +12,8 @@
 
 namespace Model;
 
+use Model\Adresse\Adresse;
+
 /**
  * Abstract class handling default manager.
  *
@@ -81,5 +83,16 @@ abstract class AbstractManager
         $statement->execute();
 
         return $statement->fetch();
+    }
+
+    public function addAdresse(Adresse $adresse): ?int
+    {
+        $statement = $this->pdo->prepare("INSERT INTO $this->table (location) VALUES (:location)");
+        $statement->bindValue('location', $adresse->getLocation(), \PDO::PARAM_STR);
+
+        if ($statement->execute()) {
+            return $this->pdo->lastInsertId();
+        }
+        return null;
     }
 }

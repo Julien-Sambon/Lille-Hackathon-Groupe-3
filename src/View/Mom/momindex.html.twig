@@ -7,5 +7,22 @@
 
 {% block body %}
     <h1>Coucou Maman !</h1>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-6">
+                <form role="form" method="post" action="">
+                    <div class="form-group">
+                        <label for="adresse">Adresse :</label>
+                        <input type="text" class="adresse" name="adresse" id="adresse" placeholder="Entrez une dresse">
+                    </div>
+                    <button type="submit" class="btn btn-primary" name="submit" id="submit">Submit</button>
+                </form>
+            </div>
+            <div class="col-sm-3"></div>
+        </div>
+    </div>
+
     <a href="/disconnect"><button type="button" class="btn btn-warning">Se déconnecter</button></a>
 {% endblock %}
