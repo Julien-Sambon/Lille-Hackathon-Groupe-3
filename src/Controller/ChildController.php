@@ -64,7 +64,6 @@ class ChildController extends AbstractController
         echo "Marque : $product->brands" . "<br />";
         echo "Quantité : $product->quantity" . "<br />";
         echo "Caractéristiques du produit" . "<br />";
-        echo "Magasin : $product->stores" . "<br />";
         echo "Conditionnement : " . $product->packaging_tags['0'] . "<br />";
         echo "Pays de vente : " . $product->countries . "<br />";
         echo "Liste des ingrédients : " . $product->ingredients_text_debug . "<br />";

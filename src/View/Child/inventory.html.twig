@@ -7,7 +7,7 @@
 
 {% block body %}
     {% for bonbon, key in inventory %}
-        <li>{{ bonbon }}<button href="child/select/{{ key }}" type="button" class="btn btn-dark ml-3">Voir la fiche</button></li>
+        <li>{{ bonbon }} <a href="/child/select/{{ key }}"><button type="button" class="btn btn-dark ml-3">Voir la fiche</button></a></li>
     {% endfor %}
     <a href="/disconnect"><button type="button" class="btn btn-warning">Se déconnecter</button></a>
 {% endblock %}
