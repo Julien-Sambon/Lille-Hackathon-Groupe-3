@@ -10,10 +10,10 @@
  * @author   Gaëtan Rolé-Dubruille <gaetan@wildcodeschool.fr>
  */
 
-namespace Model\User;
+namespace Model\Adresse;
 
 use Model\AbstractManager;
-use Model\User\User;
+use Model\Adresse\Adresse;
 
 /**
  * User manager class
@@ -22,12 +22,12 @@ use Model\User\User;
  * @package  Manager
  * @author   Gaëtan Rolé-Dubruille <gaetan@wildcodeschool.fr>
  */
-class UserManager extends AbstractManager
+class AdresseManager extends AbstractManager
 {
     /**
      * Targeted table const
      */
-    const TABLE = 'user';
+    const TABLE = 'adresse';
 
     /**
      *  Initializes this class.
@@ -46,7 +46,7 @@ class UserManager extends AbstractManager
      *
      * @return int|null
      */
-    public function add(User $user): ?int
+    public function add(Adresse $user): ?int
     {
         $statement = $this->pdo
             ->prepare("INSERT INTO $this->table VALUES (null, :firstname, :lastname, :email)");
@@ -68,7 +68,7 @@ class UserManager extends AbstractManager
      *
      * @return int|null
      */
-    public function edit(User $user): ?int
+    public function edit(Adresse $user): ?int
     {
         $statement = $this->pdo
             ->prepare("UPDATE $this->table SET `firstname` = :firstname, `lastname` = :lastname, `email` = :email WHERE id=:id");

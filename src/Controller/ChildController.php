@@ -13,8 +13,8 @@ namespace Controller;
 
 use GuzzleHttp\Client;
 
-use Model\User\User;
-use Model\User\UserManager;
+use Model\Adresse\AdresseManager;
+use Model\Adresse\Adresse;
 
 /**
  * User class controller.
@@ -32,9 +32,11 @@ class ChildController extends AbstractController
                 header('Location: /');
                 return null;
             }
-            $homeCandie = $this->giveRandomCandies();
 
-        return $this->twig->render('Child/childindex.html.twig');
+        $adresseManager = new AdresseManager($this->getPdo());
+        $adresses = $adresseManager->selectAll();
+        return $this->twig->render('Child/childindex.html.twig', ['adresses' => $adresses]);
+
     }
   
     public function inventory()

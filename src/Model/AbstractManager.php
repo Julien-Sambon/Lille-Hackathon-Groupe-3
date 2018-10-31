@@ -56,8 +56,8 @@ abstract class AbstractManager
      */
     public function selectAll(): array
     {
-        if ($this->table === "user") {
-            $this->className .= "\User";
+        if ($this->table === "adresse") {
+            $this->className .= "\Adresse";
         }
         /* Add other tables if table is in another directory */
 
