@@ -27,8 +27,10 @@
             padding: 0;
         }
         #map {
-            height: 100%;
+            height: 50%;
             width: 50%;
+            margin-top: 20px;
+            margin-bottom: 20px;
         }
         #right-panel {
             float: right;
@@ -36,11 +38,22 @@
             padding-left: 2%;
         }
         #output {
-            font-size: 11px;
+            font-size: 21px;
             color: orange;
         }
         .display-none {
             display: none;
+        }
+        .row {
+            width: 600px;
+            list-style: none;
+            float: right;
+        }
+        .row li {
+            margin: 5px 5px 5px 5px;
+        }
+        .row li a {
+            color: #FFF !important;
         }
     </style>
 {% endblock %}
@@ -152,7 +165,7 @@
                                 showGeocodedAddressOnMap(true));
                             outputDiv.innerHTML += destinationList[j] +
                                 ': ' + results[j].distance.text + '<br>';
-                            if (results[j].distance.value < 30) {
+                            if (results[j].distance.value < 50) {
                                 outputDiv.innerHTML += 'Tu es arrivé au ' + destinationList[j] + '<a href="/child/adresse/'+replace+'">'+ '  ' + 'Récupérer les bonbons' + '<a/>' + "<br />";
                             }
                         }
