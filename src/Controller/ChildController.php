@@ -35,7 +35,7 @@ class ChildController extends AbstractController
             }
 
         $adresseManager = new AdresseManager($this->getPdo());
-        $adresses = $adresseManager->selectAll();
+        $adresses = $adresseManager->selectAllNotVisited();
 
         return $this->twig->render('Child/childindex.html.twig', ['adresses' => $adresses]);
 
