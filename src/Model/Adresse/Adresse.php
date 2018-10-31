@@ -31,6 +31,24 @@ class Adresse
      */
     private $location;
 
+    private $visited;
+
+    /**
+     * @return mixed
+     */
+    public function getVisited()
+    {
+        return $this->visited;
+    }
+
+    /**
+     * @param mixed $visited
+     */
+    public function setVisited($visited): void
+    {
+        $this->visited = $visited;
+    }
+
     /**
      * @return int
      */

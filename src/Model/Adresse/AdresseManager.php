@@ -84,6 +84,15 @@ class AdresseManager extends AbstractManager
         return null;
     }
 
+    public function AddVisiteAdresse($adresse)
+    {
+        $statement = $this->pdo
+            ->prepare("UPDATE $this->table SET visited = :visited WHERE location=:location");
+        $statement->bindParam('location', $adresse, \PDO::PARAM_STR);
+        $statement->bindValue('visited', 1, \PDO::PARAM_INT);
+        $statement->execute();
+    }
+
     /**
      * Delete method
      *

@@ -13,6 +13,7 @@ namespace Controller;
 
 use GuzzleHttp\Client;
 
+use function GuzzleHttp\Psr7\str;
 use Model\Adresse\AdresseManager;
 use Model\Adresse\Adresse;
 
@@ -35,8 +36,21 @@ class ChildController extends AbstractController
 
         $adresseManager = new AdresseManager($this->getPdo());
         $adresses = $adresseManager->selectAll();
-        return $this->twig->render('Child/childindex.html.twig', ['adresses' => $adresses]);
+        return $this->twig->render('Child/childindex.html.twig', ['adresses' => $adresses, 'inventory' => $_SESSION['inventory']]);
 
+    }
+
+    public function adresseVisited($adresse)
+    {
+        $_SESSION['inventory'] = [];
+        $adresseV1 = str_replace(",+France", "", $adresse);
+        $adresseComplete = str_replace("+", " ", $adresseV1);
+
+        $adresseManager = new AdresseManager($this->getPdo());
+        $adresseManager->AddVisiteAdresse($adresseComplete);
+
+        $_SESSION['inventory'] += $this->giveRandomCandies();
+        header('Location: /');
     }
   
     public function inventory()
@@ -45,9 +59,8 @@ class ChildController extends AbstractController
             header('Location: /');
             return null;
         }
-        $homeCandie = $this->giveRandomCandies();
 
-        return $this->twig->render('Child/inventory.html.twig', ['inventory' => $homeCandie]);
+        return $this->twig->render('Child/inventory.html.twig', ['inventory' => $_SESSION['inventory']]);
     }
   
     public function select($id)

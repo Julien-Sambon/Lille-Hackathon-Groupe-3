@@ -46,6 +46,7 @@
 
 {% block body %}
     <h1>Coucou Enfant !</h1>
+    {{ dump(inventory) }}
 
     <div class="row text-center display-none">
         {% if adresses is empty %}
@@ -60,7 +61,7 @@
                 <tbody>
                 {% for adresse in adresses %}
                     <tr>
-                        <td id="{{ adresse.id }}">{{ adresse.location }}</td>
+                            <td id="{{ adresse.id }}">{{ adresse.location }}</td>
                     </tr>
                 {% endfor %}
                 </tbody>
@@ -102,15 +103,13 @@
 
             // Generate destination variables [Function to be completed]
             var el = document.getElementsByClassName("info");
-            console.log(el.length);
             for (var i = 1, ilen = el.length - 1; i < ilen; i++) {
                 el[i].id = i;
             }
             {% set i = 1 %}
             {% for adresse in adresses %}
-            var destination{{ i }} = document.getElementById('{{ adresse.id }}').textContent;
-            console.log(destination{{ i }});
-            {% set i = i + 1 %}
+                var destination{{ i }} = document.getElementById('{{ adresse.id }}').textContent;
+                {% set i = i + 1 %}
             {% endfor %}
 
             var destinationIcon = 'https://chart.googleapis.com/chart?' +
@@ -164,14 +163,13 @@
                         geocoder.geocode({'address': originList[i]},
                             showGeocodedAddressOnMap(false));
                         for (var j = 0; j < results.length; j++) {
-                            var replace = myString.replace(new RegExp(destinationList[j], " "), "+");
-                            console.log(replace);
+                            var replace = destinationList[j].replace(/ /g, "+");
                             geocoder.geocode({'address': destinationList[j]},
                                 showGeocodedAddressOnMap(true));
                             outputDiv.innerHTML += destinationList[j] +
                                 ': ' + results[j].distance.text + '<br>';
-                            if (results[j].distance.value < 50) {
-                                outputDiv.innerHTML += 't\'es à ' + results[j].distance.text + ' t\'as récupéré des bons-bons ' + '<a href="page1.php">'+ 'Récupérer des bons-bons' + '<a/>' + "<br />";
+                            if (results[j].distance.value < 30) {
+                                outputDiv.innerHTML += 'Tu es arrivé au ' + destinationList[j] + '<a href="/child/adresse/'+replace+'">'+ '  ' + 'Récupérer les bonbons' + '<a/>' + "<br />";
                             }
                             /* else {
                                 outputDiv.innerHTML += 't\'es à ' + results[j].distance.text + ' t\'es encore trop loin des bons-bons';
