@@ -37,6 +37,7 @@
         }
         #output {
             font-size: 11px;
+            color: orange;
         }
         .display-none {
             display: none;
@@ -74,8 +75,6 @@
 
     <div>
         <strong>Results</strong>
-        <button onclick="locate()">Où suis-je ?</button><br>
-        <label id="location"></label>
         </div>
     <div id="output"></div>
     </div>
@@ -85,29 +84,13 @@
 {% endblock %}
 {% block javascripts %}
     <script>
-
-        // My current location
-        function locate() {
-            navigator.geolocation.getCurrentPosition(function(position){
-                let latLng = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
-
-                new google.maps.Geocoder().geocode({"latLng": latLng}, function(results, status) {
-                    document.querySelector("#location").innerHTML = results[0].formatted_address;
-                });
-            });
-        }
-
         function initMap() {
 
             let bounds = new google.maps.LatLngBounds;
             let markersArray = [];
 
-            let origin2 = "3 bis rue Ambroise Paré, Lille, France";
+            let origin = "3 bis rue Ambroise Paré, Lille, France";
 
-            let el = document.getElementsByClassName("info");
-            for (let i = 1, ilen = el.length - 1; i < ilen; i++) {
-                el[i].id = i;
-            }
             let destinations = [];
             {% for adresse in adresses %}
                 destinations.push(document.getElementById('{{ adresse.id }}').textContent);
@@ -127,7 +110,7 @@
 
             let service = new google.maps.DistanceMatrixService;
             service.getDistanceMatrix({
-                origins: [origin2],
+                origins: [origin],
                 destinations: destinations,
                 travelMode: 'DRIVING',
                 unitSystem: google.maps.UnitSystem.METRIC,
@@ -188,6 +171,6 @@
         }
     </script>
     <script async defer
-            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCGU0PK5ks0K4jqqAZ6l2A6FKWUknklPkM&callback=initMap">
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC7er1lZUvaZlQ9Fl6-THddiMWwsJonaxg&callback=initMap">
     </script>
 {% endblock %}
