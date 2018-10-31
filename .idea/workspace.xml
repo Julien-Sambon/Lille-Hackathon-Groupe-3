@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e5c2e56a-9369-4df2-9046-e1f0ed7b854f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/View/Child/childindex.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/Child/childindex.html.twig" afterDir="false" />
-    </list>
+    <list default="true" id="e5c2e56a-9369-4df2-9046-e1f0ed7b854f" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -138,7 +136,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/View/Child/childindex.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
+            <state relative-caret-position="435">
               <caret line="32" column="32" selection-start-line="32" selection-start-column="32" selection-end-line="32" selection-end-column="32" />
             </state>
           </provider>
@@ -290,7 +288,7 @@
       <path value="$PROJECT_DIR$/vendor/sebastian/diff" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="40" />
     <option name="width" value="878" />
     <option name="height" value="508" />
@@ -393,18 +391,17 @@
       <workItem from="1540891399663" duration="6444000" />
       <workItem from="1540907570368" duration="294000" />
       <workItem from="1540953109798" duration="8616000" />
-      <workItem from="1540978170607" duration="5433000" />
+      <workItem from="1540978170607" duration="6662000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20787000" />
+    <option name="totallyTimeSpent" value="22016000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="36" y="0" width="1330" height="768" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26090342" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26090342" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -417,7 +414,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.32707354" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.32707354" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -546,7 +543,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/View/Child/childindex.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
+        <state relative-caret-position="435">
           <caret line="32" column="32" selection-start-line="32" selection-start-column="32" selection-end-line="32" selection-end-column="32" />
         </state>
       </provider>
