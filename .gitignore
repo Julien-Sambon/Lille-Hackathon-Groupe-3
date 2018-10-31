@@ -1,4 +1,4 @@
-
+app/db.php
 ###> symfony/framework-bundle ###
 /.env
 /public/bundles/
