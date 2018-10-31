@@ -35,21 +35,24 @@ class ChildController extends AbstractController
             }
 
         $adresseManager = new AdresseManager($this->getPdo());
-        $adresses = $adresseManager->selectAll();
-        return $this->twig->render('Child/childindex.html.twig', ['adresses' => $adresses, 'inventory' => $_SESSION['inventory']]);
+        $adresses = $adresseManager->selectAllNotVisited();
+
+        return $this->twig->render('Child/childindex.html.twig', ['adresses' => $adresses]);
 
     }
 
     public function adresseVisited($adresse)
     {
-        $_SESSION['inventory'] = [];
         $adresseV1 = str_replace(",+France", "", $adresse);
         $adresseComplete = str_replace("+", " ", $adresseV1);
 
         $adresseManager = new AdresseManager($this->getPdo());
         $adresseManager->AddVisiteAdresse($adresseComplete);
+        if (empty($_SESSION['inventory']))
+            $_SESSION['inventory'] = [];
+        else
+            $_SESSION['inventory'] += $this->giveRandomCandies();
 
-        $_SESSION['inventory'] += $this->giveRandomCandies();
         header('Location: /');
     }
   
